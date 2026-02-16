@@ -1,5 +1,5 @@
-CREATE DATABASE realeditor;
-Use realeditor
+/* CREATE DATABASE text_editor; */
+Use text_editor
 
 CREATE TABLE `files` (
 	`fileid` INT(11) NOT NULL AUTO_INCREMENT,

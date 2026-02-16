@@ -31,3 +31,36 @@
 2026-02-15 18:39:13.262 [AWT-EventQueue-0] INFO  pl.EditorPO - File creation failed!
 2026-02-15 18:39:13.266 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=43) Table 'text_editor.files' doesn't exist
 2026-02-15 18:39:16.419 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=43) Table 'text_editor.files' doesn't exist
+2026-02-16 00:03:35.383 [Thread-0] ERROR pl.EditorPO - (conn=45) Table 'text_editor.files' doesn't exist
+2026-02-16 00:03:52.762 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=45) Table 'text_editor.files' doesn't exist
+2026-02-16 00:03:55.922 [AWT-EventQueue-0] INFO  pl.EditorPO - File creation failed!
+2026-02-16 00:03:55.924 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=45) Table 'text_editor.files' doesn't exist
+2026-02-16 00:28:34.675 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=59) Unknown column 'NaN' in 'VALUES'
+2026-02-16 00:28:36.470 [AWT-EventQueue-0] INFO  pl.EditorPO - File creation failed!
+2026-02-16 00:34:10.517 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=60) Unknown column 'NaN' in 'VALUES'
+2026-02-16 00:34:43.600 [AWT-EventQueue-0] INFO  pl.EditorPO - File creation failed!
+2026-02-16 08:52:16.471 [AWT-EventQueue-0] INFO  pl.EditorPO - File created successfully!
+2026-02-16 08:52:44.310 [Thread-0] ERROR pl.EditorPO - (conn=61) Unknown column 'NaN' in 'VALUES'
+2026-02-16 08:52:45.709 [Thread-0] INFO  pl.EditorPO - fyp.txt failed to upload!
+2026-02-16 09:02:08.494 [Thread-0] INFO  pl.EditorPO - fyp.txt uploaded successfully!
+2026-02-16 09:02:21.851 [AWT-EventQueue-0] INFO  pl.EditorPO - Do you want to delete the selected file?
+2026-02-16 09:02:26.478 [AWT-EventQueue-0] INFO  pl.EditorPO - Do you want to delete the selected file?
+2026-02-16 09:02:26.482 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=62) Table 'text_editor.FILES' doesn't exist
+2026-02-16 09:02:28.300 [AWT-EventQueue-0] INFO  pl.EditorPO - Failed to delete the selected file.
+2026-02-16 09:06:46.597 [AWT-EventQueue-0] INFO  pl.EditorPO - File created successfully!
+2026-02-16 09:06:51.434 [AWT-EventQueue-0] INFO  pl.EditorPO - Do you want to delete the selected file?
+2026-02-16 09:06:52.915 [AWT-EventQueue-0] WARN  pl.EditorPO - Please select a file to delete.
+2026-02-16 09:07:04.067 [AWT-EventQueue-0] INFO  pl.EditorPO - Do you want to delete the selected file?
+2026-02-16 09:07:04.071 [AWT-EventQueue-0] ERROR pl.EditorPO - (conn=63) Table 'text_editor.FILES' doesn't exist
+2026-02-16 09:12:01.251 [AWT-EventQueue-0] ERROR pl.EditorPO - Could not Search, Please Enter at least 3 letter to search
+2026-02-16 09:12:06.258 [AWT-EventQueue-0] INFO  pl.EditorPO - File created successfully!
+2026-02-16 09:12:10.838 [AWT-EventQueue-0] INFO  pl.EditorPO - Do you want to delete the selected file?
+2026-02-16 09:12:11.931 [AWT-EventQueue-0] INFO  pl.EditorPO - File deleted successfully!
+2026-02-16 09:12:17.049 [AWT-EventQueue-0] INFO  pl.EditorPO - TF-IDF Score for 'sdf' is: 0.0
+2026-02-16 09:12:21.490 [AWT-EventQueue-0] ERROR pl.EditorPO - Could not Search, Please Enter at least 3 letter to search
+2026-02-16 09:12:24.736 [AWT-EventQueue-0] ERROR pl.EditorPO - Could not Search, Please Enter at least 3 letter to search
+2026-02-16 09:12:32.336 [AWT-EventQueue-0] INFO  pl.EditorPO - No files found while searching.
+2026-02-16 09:12:42.556 [AWT-EventQueue-0] INFO  pl.EditorPO - No files found while searching.
+2026-02-16 09:13:16.611 [AWT-EventQueue-0] INFO  pl.EditorPO - Failed to delete the selected file.
+2026-02-16 09:13:30.852 [AWT-EventQueue-0] INFO  pl.EditorPO - File created successfully!
+2026-02-16 09:15:19.188 [AWT-EventQueue-0] INFO  pl.EditorPO - TF-IDF Score for 'sdf' is: 0.0

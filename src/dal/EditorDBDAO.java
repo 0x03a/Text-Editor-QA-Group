@@ -78,6 +78,13 @@ public class EditorDBDAO implements IEditorDBDAO {
 				PreparedStatement tfidfStmt = conn.prepareStatement(tfidfQuery)) {
 			conn = DatabaseConnection.getInstance().getConnection();
 			double tfidf = performTFIDF(getAllExistingFilesContent(conn), content);
+			// Correction # 1 in code by me(inshal):
+			if (Double.isNaN(tfidf) || Double.isInfinite(tfidf)) {
+			    tfidf = 0.0;
+			}
+
+			
+			
 			conn.setAutoCommit(false);
 
 			// Insert into files table
@@ -193,6 +200,11 @@ public class EditorDBDAO implements IEditorDBDAO {
 				for (Map.Entry<String, Double> entry : scoreMap.entrySet()) {
 					String word = entry.getKey();
 					Double pkl = entry.getValue();
+					// Correction # 2 by me(inshal):
+					if (pkl == null || Double.isNaN(pkl) || Double.isInfinite(pkl)) {
+					    pkl = 0.0;
+					}
+
 
 					pklStmt.setInt(1, pageId);
 					pklStmt.setString(2, word);
@@ -207,6 +219,10 @@ public class EditorDBDAO implements IEditorDBDAO {
 				for (Map.Entry<String, Double> entry : scoreMap.entrySet()) {
 					String word = entry.getKey();
 					Double pmi = entry.getValue();
+					// Correction # 3 by me(inshal):
+					if (pmi == null || Double.isNaN(pmi) || Double.isInfinite(pmi)) {
+					    pmi = 0.0;
+					}
 
 					pmiStmt.setInt(1, pageId);
 					pmiStmt.setString(2, word);
@@ -415,6 +431,11 @@ public class EditorDBDAO implements IEditorDBDAO {
 
 			// Update TF-IDF
 			double tfidf = performTFIDF(getAllExistingFilesContent(conn), content);
+			// Correction # 5 by me(inshal):
+			if (Double.isNaN(tfidf) || Double.isInfinite(tfidf)) {
+			    tfidf = 0.0;
+			}
+
 			String tfidfQuery = "UPDATE tfidf SET tfidfScore = ? WHERE fileId = ?";
 			tfidfStmt = conn.prepareStatement(tfidfQuery);
 			tfidfStmt.setDouble(1, tfidf);
@@ -440,7 +461,7 @@ public class EditorDBDAO implements IEditorDBDAO {
 
 	@Override
 	public boolean deleteFileInDB(int id) {
-		String query = "DELETE FROM FILES WHERE fileId = ?";
+		String query = "DELETE FROM files WHERE fileId = ?"; // changed here from FILES to files
 		try (PreparedStatement fileStmt = conn.prepareStatement(query)) {
 
 			fileStmt.setInt(1, id);
@@ -455,7 +476,7 @@ public class EditorDBDAO implements IEditorDBDAO {
 		}
 	}
 //	public boolean deleteFileInDB(int id) {
-//		String query = "DELETE FROM FILES WHERE fileId = ?";
+//		String query = "DELETE FROM files WHERE fileId = ?";
 //
 //		PreparedStatement fileStmt = null;
 //
